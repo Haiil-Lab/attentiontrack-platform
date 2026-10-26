@@ -1,0 +1,124 @@
+{
+  "protocol": "participant_disjoint_rotating_validation",
+  "splitter": "StratifiedGroupKFold",
+  "sklearn_version": "1.7.2",
+  "n_splits": 5,
+  "seed": 42,
+  "validation": "Next outer group cyclically; all other groups form training",
+  "source_manifest": "C:\\Endava\\EndevLocal\\AttentionTrack-Platform\\data\\processed\\daisee_split\\split_manifest.csv",
+  "source_manifest_sha256": "cddfc33c3740f367cd63b2da903a318f372dbb423c060e0ff78502f3995b65fa",
+  "clips": 8930,
+  "participants": 113,
+  "folds": [
+    {
+      "fold": 1,
+      "manifest_sha256": "8b9570144c76d8f72f52b80b2d5b9da8e3108626f3d9218520b4bf373af05d40",
+      "train": {
+        "clips": 5738,
+        "subjects": 70,
+        "y0": 4220,
+        "y1": 1518
+      },
+      "val": {
+        "clips": 1486,
+        "subjects": 22,
+        "y0": 1188,
+        "y1": 298
+      },
+      "test": {
+        "clips": 1706,
+        "subjects": 21,
+        "y0": 1160,
+        "y1": 546
+      }
+    },
+    {
+      "fold": 2,
+      "manifest_sha256": "14a2e62ad2dd6a4ae748461b7c90ed60693582eea1dd1ee23baabce8bf67dcb0",
+      "train": {
+        "clips": 5795,
+        "subjects": 71,
+        "y0": 4142,
+        "y1": 1653
+      },
+      "val": {
+        "clips": 1649,
+        "subjects": 20,
+        "y0": 1238,
+        "y1": 411
+      },
+      "test": {
+        "clips": 1486,
+        "subjects": 22,
+        "y0": 1188,
+        "y1": 298
+      }
+    },
+    {
+      "fold": 3,
+      "manifest_sha256": "ffa54f558b955a26d6aef9dc3b0bd95768f080fd93eed50ed4bcf307b37b6e54",
+      "train": {
+        "clips": 5339,
+        "subjects": 68,
+        "y0": 3926,
+        "y1": 1413
+      },
+      "val": {
+        "clips": 1942,
+        "subjects": 25,
+        "y0": 1404,
+        "y1": 538
+      },
+      "test": {
+        "clips": 1649,
+        "subjects": 20,
+        "y0": 1238,
+        "y1": 411
+      }
+    },
+    {
+      "fold": 4,
+      "manifest_sha256": "67d830420c64404a55f0b2783a72d5553299f50e631c3e64a2862f401c96127f",
+      "train": {
+        "clips": 4841,
+        "subjects": 63,
+        "y0": 3586,
+        "y1": 1255
+      },
+      "val": {
+        "clips": 2147,
+        "subjects": 25,
+        "y0": 1578,
+        "y1": 569
+      },
+      "test": {
+        "clips": 1942,
+        "subjects": 25,
+        "y0": 1404,
+        "y1": 538
+      }
+    },
+    {
+      "fold": 5,
+      "manifest_sha256": "6f55343f2b0241c99c0dacbeb55c6bbde05c4e89bcd9beb2bdbb92eb84d1b1c1",
+      "train": {
+        "clips": 5077,
+        "subjects": 67,
+        "y0": 3830,
+        "y1": 1247
+      },
+      "val": {
+        "clips": 1706,
+        "subjects": 21,
+        "y0": 1160,
+        "y1": 546
+      },
+      "test": {
+        "clips": 2147,
+        "subjects": 25,
+        "y0": 1578,
+        "y1": 569
+      }
+    }
+  ]
+}

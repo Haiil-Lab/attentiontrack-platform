@@ -1,0 +1,27 @@
+Device: cpu
+train=5339, val=1942, test=1649
+train: total=5339, y0=3926, y1=1413, pos_ratio=0.2647, nan_files=190
+val: total=1942, y0=1404, y1=538, pos_ratio=0.2770, nan_files=84
+test: total=1649, y0=1238, y1=411, pos_ratio=0.2492, nan_files=50
+raw_pos_weight=2.778
+used_pos_weight=1.000
+Input size: 21
+Epoch 01 | loss=0.5761 | val_f1=0.4662 | val_bal_acc=0.6122 | val_spec=0.6147 | val_roc_auc=0.6155 | val_pr_auc=0.3956 | thr=0.20
+Epoch 02 | loss=0.5429 | val_f1=0.4193 | val_bal_acc=0.5945 | val_spec=0.7521 | val_roc_auc=0.6029 | val_pr_auc=0.3545 | thr=0.30
+Epoch 03 | loss=0.5326 | val_f1=0.4660 | val_bal_acc=0.6124 | val_spec=0.6189 | val_roc_auc=0.6185 | val_pr_auc=0.3637 | thr=0.25
+Epoch 04 | loss=0.5293 | val_f1=0.4427 | val_bal_acc=0.6017 | val_spec=0.6866 | val_roc_auc=0.6065 | val_pr_auc=0.3679 | thr=0.30
+Epoch 05 | loss=0.5194 | val_f1=0.4347 | val_bal_acc=0.6023 | val_spec=0.7343 | val_roc_auc=0.6070 | val_pr_auc=0.3673 | thr=0.30
+Epoch 06 | loss=0.5173 | val_f1=0.4088 | val_bal_acc=0.5897 | val_spec=0.7650 | val_roc_auc=0.5951 | val_pr_auc=0.3515 | thr=0.35
+Epoch 07 | loss=0.5109 | val_f1=0.4646 | val_bal_acc=0.6250 | val_spec=0.7500 | val_roc_auc=0.6296 | val_pr_auc=0.3709 | thr=0.30
+Epoch 08 | loss=0.5053 | val_f1=0.4540 | val_bal_acc=0.5986 | val_spec=0.5876 | val_roc_auc=0.6105 | val_pr_auc=0.3611 | thr=0.25
+Epoch 09 | loss=0.5004 | val_f1=0.4307 | val_bal_acc=0.5995 | val_spec=0.7343 | val_roc_auc=0.6164 | val_pr_auc=0.3739 | thr=0.30
+Epoch 10 | loss=0.4930 | val_f1=0.4462 | val_bal_acc=0.6104 | val_spec=0.7358 | val_roc_auc=0.6175 | val_pr_auc=0.3699 | thr=0.30
+Epoch 11 | loss=0.4906 | val_f1=0.4363 | val_bal_acc=0.5965 | val_spec=0.6838 | val_roc_auc=0.5963 | val_pr_auc=0.3563 | thr=0.25
+Epoch 12 | loss=0.4821 | val_f1=0.4236 | val_bal_acc=0.5906 | val_spec=0.7073 | val_roc_auc=0.5988 | val_pr_auc=0.3550 | thr=0.35
+Epoch 13 | loss=0.4749 | val_f1=0.4360 | val_bal_acc=0.5861 | val_spec=0.6090 | val_roc_auc=0.5934 | val_pr_auc=0.3545 | thr=0.30
+Epoch 14 | loss=0.4774 | val_f1=0.4116 | val_bal_acc=0.5870 | val_spec=0.7372 | val_roc_auc=0.5901 | val_pr_auc=0.3449 | thr=0.35
+Early stopping.
+BEST threshold from val: 0.300
+FINAL VAL metrics: {'acc': 0.6807415036045315, 'prec': 0.4338709677419355, 'rec': 0.5, 'f1': 0.46459412780656306, 'spec': 0.75, 'bal_acc': 0.625, 'tp': 269, 'tn': 1053, 'fp': 351, 'fn': 269, 'threshold': 0.3, 'roc_auc': 0.6296428684904521, 'pr_auc': 0.3709284610305258}
+TEST metrics: {'acc': 0.5973317161916313, 'prec': 0.2815198618307427, 'rec': 0.39659367396593675, 'f1': 0.3292929292929293, 'spec': 0.6639741518578353, 'bal_acc': 0.530283912911886, 'tp': 163, 'tn': 822, 'fp': 416, 'fn': 248, 'threshold': 0.3, 'roc_auc': 0.5329587396672287, 'pr_auc': 0.24958992988706666}
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\lstm_attention_run3\best.pt, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\lstm_attention_run3\norm.json, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\lstm_attention_run3\metrics.json

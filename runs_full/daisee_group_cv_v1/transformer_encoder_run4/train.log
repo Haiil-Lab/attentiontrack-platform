@@ -1,0 +1,28 @@
+Device: cpu
+train=4841, val=2147, test=1942
+raw_pos_weight=2.857
+used_pos_weight=1.000
+Input size: 21
+C:\Endava\EndevLocal\AttentionTrack-Platform\scripts\train_transformer_encoder.py:228: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc_layer, num_layers=num_layers)
+Epoch 01 | loss=0.5604 | val_f1=0.3714 | val_bal_acc=0.5225 | val_spec=0.5019 | val_roc_auc=0.5258 | val_pr_auc=0.2843 | thr=0.25
+Epoch 02 | loss=0.5359 | val_f1=0.3653 | val_bal_acc=0.5224 | val_spec=0.5298 | val_roc_auc=0.5315 | val_pr_auc=0.2914 | thr=0.25
+Epoch 03 | loss=0.5297 | val_f1=0.3711 | val_bal_acc=0.5277 | val_spec=0.5317 | val_roc_auc=0.5354 | val_pr_auc=0.2869 | thr=0.20
+Epoch 04 | loss=0.5176 | val_f1=0.2913 | val_bal_acc=0.5059 | val_spec=0.6990 | val_roc_auc=0.5368 | val_pr_auc=0.2800 | thr=0.20
+Epoch 05 | loss=0.5105 | val_f1=0.3514 | val_bal_acc=0.5362 | val_spec=0.6559 | val_roc_auc=0.5517 | val_pr_auc=0.2991 | thr=0.20
+Epoch 06 | loss=0.5069 | val_f1=0.3985 | val_bal_acc=0.5532 | val_spec=0.5406 | val_roc_auc=0.5625 | val_pr_auc=0.3035 | thr=0.20
+Epoch 07 | loss=0.4960 | val_f1=0.3833 | val_bal_acc=0.5416 | val_spec=0.5507 | val_roc_auc=0.5428 | val_pr_auc=0.2883 | thr=0.25
+Epoch 08 | loss=0.4932 | val_f1=0.3775 | val_bal_acc=0.5377 | val_spec=0.5570 | val_roc_auc=0.5483 | val_pr_auc=0.2862 | thr=0.20
+Epoch 09 | loss=0.4871 | val_f1=0.4097 | val_bal_acc=0.5640 | val_spec=0.5463 | val_roc_auc=0.5695 | val_pr_auc=0.3025 | thr=0.20
+Epoch 10 | loss=0.4793 | val_f1=0.3725 | val_bal_acc=0.5529 | val_spec=0.6629 | val_roc_auc=0.5748 | val_pr_auc=0.3156 | thr=0.20
+Epoch 11 | loss=0.4761 | val_f1=0.3622 | val_bal_acc=0.5285 | val_spec=0.5754 | val_roc_auc=0.5322 | val_pr_auc=0.2839 | thr=0.25
+Epoch 12 | loss=0.4699 | val_f1=0.4036 | val_bal_acc=0.5447 | val_spec=0.4531 | val_roc_auc=0.5643 | val_pr_auc=0.3086 | thr=0.20
+Epoch 13 | loss=0.4686 | val_f1=0.3757 | val_bal_acc=0.5575 | val_spec=0.6755 | val_roc_auc=0.5737 | val_pr_auc=0.3155 | thr=0.35
+Epoch 14 | loss=0.4566 | val_f1=0.3664 | val_bal_acc=0.5382 | val_spec=0.6090 | val_roc_auc=0.5595 | val_pr_auc=0.3053 | thr=0.20
+Epoch 15 | loss=0.4551 | val_f1=0.3831 | val_bal_acc=0.5473 | val_spec=0.5849 | val_roc_auc=0.5656 | val_pr_auc=0.3062 | thr=0.20
+Epoch 16 | loss=0.4481 | val_f1=0.3987 | val_bal_acc=0.5555 | val_spec=0.5539 | val_roc_auc=0.5663 | val_pr_auc=0.3005 | thr=0.20
+Early stopping.
+BEST threshold from val: 0.200
+FINAL VAL metrics: {'acc': 0.5556590591523055, 'prec': 0.31614135625596945, 'rec': 0.5817223198594025, 'f1': 0.4096534653465347, 'spec': 0.5462610899873257, 'bal_acc': 0.563991704923364, 'tp': 331, 'tn': 862, 'fp': 716, 'fn': 238, 'threshold': 0.2, 'roc_auc': 0.5695302946266881, 'pr_auc': 0.30254137268803993}
+TEST metrics: {'acc': 0.5674562306900103, 'prec': 0.3176328502415459, 'rec': 0.4888475836431227, 'f1': 0.3850658857979502, 'spec': 0.5975783475783476, 'bal_acc': 0.5432129656107352, 'tp': 263, 'tn': 839, 'fp': 565, 'fn': 275, 'threshold': 0.2, 'roc_auc': 0.5474467533017718, 'pr_auc': 0.3265737148136204}
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\transformer_encoder_run4\best.pt, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\transformer_encoder_run4\norm.json, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\transformer_encoder_run4\metrics.json

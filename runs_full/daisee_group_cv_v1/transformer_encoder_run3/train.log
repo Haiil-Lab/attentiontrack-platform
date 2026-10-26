@@ -1,0 +1,20 @@
+Device: cpu
+train=5339, val=1942, test=1649
+raw_pos_weight=2.778
+used_pos_weight=1.000
+Input size: 21
+C:\Endava\EndevLocal\AttentionTrack-Platform\scripts\train_transformer_encoder.py:228: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(enc_layer, num_layers=num_layers)
+Epoch 01 | loss=0.5673 | val_f1=0.4684 | val_bal_acc=0.6184 | val_spec=0.6588 | val_roc_auc=0.6178 | val_pr_auc=0.3944 | thr=0.25
+Epoch 02 | loss=0.5526 | val_f1=0.4579 | val_bal_acc=0.6130 | val_spec=0.6852 | val_roc_auc=0.6100 | val_pr_auc=0.3537 | thr=0.25
+Epoch 03 | loss=0.5403 | val_f1=0.4117 | val_bal_acc=0.5760 | val_spec=0.6688 | val_roc_auc=0.5807 | val_pr_auc=0.3412 | thr=0.30
+Epoch 04 | loss=0.5330 | val_f1=0.4226 | val_bal_acc=0.5780 | val_spec=0.6282 | val_roc_auc=0.5722 | val_pr_auc=0.3323 | thr=0.30
+Epoch 05 | loss=0.5304 | val_f1=0.4211 | val_bal_acc=0.5730 | val_spec=0.6033 | val_roc_auc=0.5867 | val_pr_auc=0.3571 | thr=0.25
+Epoch 06 | loss=0.5232 | val_f1=0.4169 | val_bal_acc=0.5876 | val_spec=0.7179 | val_roc_auc=0.5944 | val_pr_auc=0.3422 | thr=0.30
+Epoch 07 | loss=0.5210 | val_f1=0.4327 | val_bal_acc=0.5954 | val_spec=0.6944 | val_roc_auc=0.6064 | val_pr_auc=0.3489 | thr=0.30
+Epoch 08 | loss=0.5153 | val_f1=0.4182 | val_bal_acc=0.5902 | val_spec=0.7286 | val_roc_auc=0.5989 | val_pr_auc=0.3512 | thr=0.30
+Early stopping.
+BEST threshold from val: 0.250
+FINAL VAL metrics: {'acc': 0.6364572605561277, 'prec': 0.39367088607594936, 'rec': 0.5780669144981413, 'f1': 0.4683734939759036, 'spec': 0.6588319088319088, 'bal_acc': 0.618449411665025, 'tp': 311, 'tn': 925, 'fp': 479, 'fn': 227, 'threshold': 0.25, 'roc_auc': 0.6177768775352418, 'pr_auc': 0.39435348357127326}
+TEST metrics: {'acc': 0.5415403274711946, 'prec': 0.2785622593068036, 'rec': 0.5279805352798054, 'f1': 0.3647058823529412, 'spec': 0.5460420032310178, 'bal_acc': 0.5370112692554116, 'tp': 217, 'tn': 676, 'fp': 562, 'fn': 194, 'threshold': 0.25, 'roc_auc': 0.5664166755106934, 'pr_auc': 0.3311723105855988}
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\transformer_encoder_run3\best.pt, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\transformer_encoder_run3\norm.json, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\transformer_encoder_run3\metrics.json

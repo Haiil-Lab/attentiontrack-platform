@@ -1,0 +1,49 @@
+{
+  "feature_dim": 84,
+  "best_threshold": 0.4,
+  "val": {
+    "acc": 0.6137162954279015,
+    "prec": 0.4098883572567783,
+    "rec": 0.4706959706959707,
+    "f1": 0.43819266837169646,
+    "spec": 0.6810344827586207,
+    "bal_acc": 0.5758652267272957,
+    "tp": 257,
+    "tn": 790,
+    "fp": 370,
+    "fn": 289,
+    "threshold": 0.4,
+    "roc_auc": 0.5921434886952128,
+    "pr_auc": 0.42090743209014697
+  },
+  "test": {
+    "acc": 0.5710293432696786,
+    "prec": 0.32004089979550104,
+    "rec": 0.5500878734622144,
+    "f1": 0.4046541693600518,
+    "spec": 0.5785804816223067,
+    "bal_acc": 0.5643341775422606,
+    "tp": 313,
+    "tn": 913,
+    "fp": 665,
+    "fn": 256,
+    "threshold": 0.4,
+    "roc_auc": 0.5880505456173528,
+    "pr_auc": 0.32212814370927983
+  },
+  "params": {
+    "features_dir": "C:\\Endava\\EndevLocal\\AttentionTrack-Platform\\data\\processed\\daisee_group_cv_v1\\fold_5",
+    "save_dir": "C:\\Endava\\EndevLocal\\AttentionTrack-Platform\\runs_full\\daisee_group_cv_v1\\xgboost_run5",
+    "decision_metric": "bal_acc",
+    "thr_min": 0.2,
+    "thr_max": 0.9,
+    "thr_steps": 15,
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "random_state": 42
+  },
+  "scale_pos_weight": 3.071371291098637
+}

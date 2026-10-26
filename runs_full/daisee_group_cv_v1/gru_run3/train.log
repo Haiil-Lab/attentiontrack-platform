@@ -1,0 +1,19 @@
+Device: cpu
+train=5339, val=1942, test=1649
+raw_pos_weight=2.778
+used_pos_weight=1.000
+Input size: 21
+Epoch 01 | loss=0.5800 | val_f1=0.3834 | val_bal_acc=0.5778 | val_spec=0.7856 | val_roc_auc=0.5818 | val_pr_auc=0.3621 | thr=0.35
+Epoch 02 | loss=0.5608 | val_f1=0.4623 | val_bal_acc=0.6189 | val_spec=0.7080 | val_roc_auc=0.6220 | val_pr_auc=0.3709 | thr=0.25
+Epoch 03 | loss=0.5498 | val_f1=0.3997 | val_bal_acc=0.5714 | val_spec=0.6930 | val_roc_auc=0.5745 | val_pr_auc=0.3370 | thr=0.25
+Epoch 04 | loss=0.5438 | val_f1=0.4000 | val_bal_acc=0.5901 | val_spec=0.7991 | val_roc_auc=0.6000 | val_pr_auc=0.3539 | thr=0.35
+Epoch 05 | loss=0.5350 | val_f1=0.3935 | val_bal_acc=0.5772 | val_spec=0.7493 | val_roc_auc=0.5933 | val_pr_auc=0.3592 | thr=0.35
+Epoch 06 | loss=0.5305 | val_f1=0.4063 | val_bal_acc=0.5771 | val_spec=0.6987 | val_roc_auc=0.5823 | val_pr_auc=0.3439 | thr=0.30
+Epoch 07 | loss=0.5267 | val_f1=0.3725 | val_bal_acc=0.5625 | val_spec=0.7422 | val_roc_auc=0.5665 | val_pr_auc=0.3388 | thr=0.30
+Epoch 08 | loss=0.5218 | val_f1=0.3611 | val_bal_acc=0.5666 | val_spec=0.7949 | val_roc_auc=0.5796 | val_pr_auc=0.3450 | thr=0.35
+Epoch 09 | loss=0.5151 | val_f1=0.4133 | val_bal_acc=0.5935 | val_spec=0.7707 | val_roc_auc=0.6190 | val_pr_auc=0.3690 | thr=0.35
+Early stopping.
+BEST threshold from val: 0.250
+FINAL VAL metrics: {'acc': 0.6585993820803295, 'prec': 0.41007194244604317, 'rec': 0.5297397769516728, 'f1': 0.46228710462287104, 'spec': 0.707977207977208, 'bal_acc': 0.6188584924644405, 'tp': 285, 'tn': 994, 'fp': 410, 'fn': 253, 'threshold': 0.25, 'roc_auc': 0.6220411146061704, 'pr_auc': 0.3708804240364486}
+TEST metrics: {'acc': 0.4990903577926016, 'prec': 0.23833543505674654, 'rec': 0.45985401459854014, 'f1': 0.31395348837209297, 'spec': 0.5121163166397416, 'bal_acc': 0.48598516561914085, 'tp': 189, 'tn': 634, 'fp': 604, 'fn': 222, 'threshold': 0.25, 'roc_auc': 0.4949549740771749, 'pr_auc': 0.22913445934480603}
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\gru_run3\best.pt, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\gru_run3\norm.json, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\gru_run3\metrics.json

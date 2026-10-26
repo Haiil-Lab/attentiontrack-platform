@@ -1,0 +1,49 @@
+{
+  "feature_dim": 84,
+  "best_threshold": 0.4,
+  "val": {
+    "acc": 0.6684092606422704,
+    "prec": 0.42857142857142855,
+    "rec": 0.7627118644067796,
+    "f1": 0.548780487804878,
+    "spec": 0.6345177664974619,
+    "bal_acc": 0.6986148154521208,
+    "tp": 270,
+    "tn": 625,
+    "fp": 360,
+    "fn": 84,
+    "threshold": 0.4,
+    "roc_auc": 0.7574937623677191,
+    "pr_auc": 0.5444630489204514
+  },
+  "test": {
+    "acc": 0.6619402985074627,
+    "prec": 0.42096774193548386,
+    "rec": 0.7352112676056338,
+    "f1": 0.5353846153846153,
+    "spec": 0.6355329949238578,
+    "bal_acc": 0.6853721312647458,
+    "tp": 261,
+    "tn": 626,
+    "fp": 359,
+    "fn": 94,
+    "threshold": 0.4,
+    "roc_auc": 0.753276613998713,
+    "pr_auc": 0.5088798357925437
+  },
+  "params": {
+    "features_dir": "C:\\Endava\\EndevLocal\\AttentionTrack-Platform\\data\\processed\\daisee_split",
+    "save_dir": "runs_full\\daisee_5runs_all\\xgboost_run5",
+    "decision_metric": "bal_acc",
+    "thr_min": 0.2,
+    "thr_max": 0.9,
+    "thr_steps": 15,
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "random_state": 5
+  },
+  "scale_pos_weight": 2.781609195402299
+}

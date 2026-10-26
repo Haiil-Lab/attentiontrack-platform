@@ -1,0 +1,16 @@
+Tabular feature dim: 84
+train: total=5077, y0=3830, y1=1247, pos_ratio=0.2456
+val: total=1706, y0=1160, y1=546, pos_ratio=0.3200
+test: total=2147, y0=1578, y1=569, pos_ratio=0.2650
+
+=== LogisticRegression ===
+BEST threshold from val: 0.500
+VAL metrics: {'acc': 0.5978898007033998, 'prec': 0.3669201520912547, 'rec': 0.3534798534798535, 'f1': 0.36007462686567165, 'spec': 0.7129310344827586, 'bal_acc': 0.5332054439813061, 'tp': 193, 'tn': 827, 'fp': 333, 'fn': 353, 'threshold': 0.5, 'roc_auc': 0.5450438928887205, 'pr_auc': 0.3793545457330601}
+TEST metrics: {'acc': 0.6129482999534234, 'prec': 0.3358395989974937, 'rec': 0.4710017574692443, 'f1': 0.39209948792977317, 'spec': 0.6641318124207858, 'bal_acc': 0.567566784945015, 'tp': 268, 'tn': 1048, 'fp': 530, 'fn': 301, 'threshold': 0.5, 'roc_auc': 0.5811487478310068, 'pr_auc': 0.3449046747879612}
+
+=== RandomForest ===
+BEST threshold from val: 0.350
+VAL metrics: {'acc': 0.6418522860492379, 'prec': 0.430406852248394, 'rec': 0.36813186813186816, 'f1': 0.39684106614017767, 'spec': 0.7706896551724138, 'bal_acc': 0.569410761652141, 'tp': 201, 'tn': 894, 'fp': 266, 'fn': 345, 'threshold': 0.35, 'roc_auc': 0.5955270304408236, 'pr_auc': 0.4035799704716513}
+TEST metrics: {'acc': 0.6469492314857941, 'prec': 0.3678321678321678, 'rec': 0.46221441124780316, 'f1': 0.40965732087227413, 'spec': 0.7135614702154626, 'bal_acc': 0.5878879407316329, 'tp': 263, 'tn': 1126, 'fp': 452, 'fn': 306, 'threshold': 0.35, 'roc_auc': 0.6275212110277297, 'pr_auc': 0.3392918736930597}
+
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\baseline_tabular_run5\baseline_metrics.json

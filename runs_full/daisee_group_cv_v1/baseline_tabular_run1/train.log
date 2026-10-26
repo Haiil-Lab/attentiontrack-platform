@@ -1,0 +1,81 @@
+Tabular feature dim: 84
+train: total=5738, y0=4220, y1=1518, pos_ratio=0.2646
+val: total=1486, y0=1188, y1=298, pos_ratio=0.2005
+test: total=1706, y0=1160, y1=546, pos_ratio=0.3200
+
+=== LogisticRegression ===
+BEST threshold from val: 0.550
+VAL metrics: {'acc': 0.7261103633916555, 'prec': 0.34017595307917886, 'rec': 0.38926174496644295, 'f1': 0.36306729264475734, 'spec': 0.8106060606060606, 'bal_acc': 0.5999339027862518, 'tp': 116, 'tn': 963, 'fp': 225, 'fn': 182, 'threshold': 0.55, 'roc_auc': 0.6326025919146725, 'pr_auc': 0.3183715701678106}
+TEST metrics: {'acc': 0.6406799531066822, 'prec': 0.4087193460490463, 'rec': 0.27472527472527475, 'f1': 0.3285870755750274, 'spec': 0.8129310344827586, 'bal_acc': 0.5438281546040167, 'tp': 150, 'tn': 943, 'fp': 217, 'fn': 396, 'threshold': 0.55, 'roc_auc': 0.5757073386383731, 'pr_auc': 0.3836986897181109}
+
+=== RandomForest ===
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\scripts\run_group_cv.py", line 221, in <module>
+    worker(sys.argv[2], sys.argv[3:])
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\scripts\run_group_cv.py", line 130, in worker
+    runpy.run_module(module, run_name="__main__")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 227, in run_module
+    return _run_code(code, {}, init_globals, run_name, mod_spec)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\scripts\baseline_tabular.py", line 328, in <module>
+    main()
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\scripts\baseline_tabular.py", line 302, in main
+    results["random_forest"] = run_model(
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\scripts\baseline_tabular.py", line 230, in run_model
+    model.fit(X_train, y_train)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\sklearn\base.py", line 1365, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\sklearn\pipeline.py", line 663, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\sklearn\base.py", line 1365, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\sklearn\ensemble\_forest.py", line 486, in fit
+    trees = Parallel(
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\sklearn\utils\parallel.py", line 82, in __call__
+    return super().__call__(iterable_with_config_and_warning_filters)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\joblib\parallel.py", line 2070, in __call__
+    next(output)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\joblib\parallel.py", line 1675, in _get_outputs
+    self._start(iterator, pre_dispatch)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\joblib\parallel.py", line 1658, in _start
+    if self.dispatch_one_batch(iterator):
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\joblib\parallel.py", line 1540, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\joblib\parallel.py", line 1437, in _dispatch
+    job = self._backend.submit(batch, callback=batch_tracker)
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\joblib\_parallel_backends.py", line 339, in submit
+    return self._get_pool().apply_async(
+  File "C:\Endava\EndevLocal\AttentionTrack-Platform\.venv\lib\site-packages\joblib\_parallel_backends.py", line 507, in _get_pool
+    self._pool = ThreadPool(self._n_jobs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\pool.py", line 930, in __init__
+    Pool.__init__(self, processes, initializer, initargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\pool.py", line 196, in __init__
+    self._change_notifier = self._ctx.SimpleQueue()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\context.py", line 113, in SimpleQueue
+    return SimpleQueue(ctx=self.get_context())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\queues.py", line 340, in __init__
+    self._reader, self._writer = connection.Pipe(duplex=False)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\multiprocessing\connection.py", line 558, in Pipe
+    h2 = _winapi.CreateFile(
+PermissionError: [WinError 5] Access is denied
+Tabular feature dim: 84
+train: total=5738, y0=4220, y1=1518, pos_ratio=0.2646
+val: total=1486, y0=1188, y1=298, pos_ratio=0.2005
+test: total=1706, y0=1160, y1=546, pos_ratio=0.3200
+
+=== LogisticRegression ===
+BEST threshold from val: 0.550
+VAL metrics: {'acc': 0.7261103633916555, 'prec': 0.34017595307917886, 'rec': 0.38926174496644295, 'f1': 0.36306729264475734, 'spec': 0.8106060606060606, 'bal_acc': 0.5999339027862518, 'tp': 116, 'tn': 963, 'fp': 225, 'fn': 182, 'threshold': 0.55, 'roc_auc': 0.6326025919146725, 'pr_auc': 0.3183715701678106}
+TEST metrics: {'acc': 0.6406799531066822, 'prec': 0.4087193460490463, 'rec': 0.27472527472527475, 'f1': 0.3285870755750274, 'spec': 0.8129310344827586, 'bal_acc': 0.5438281546040167, 'tp': 150, 'tn': 943, 'fp': 217, 'fn': 396, 'threshold': 0.55, 'roc_auc': 0.5757073386383731, 'pr_auc': 0.3836986897181109}
+
+=== RandomForest ===
+BEST threshold from val: 0.300
+VAL metrics: {'acc': 0.6729475100942126, 'prec': 0.3401360544217687, 'rec': 0.6711409395973155, 'f1': 0.4514672686230248, 'spec': 0.6734006734006734, 'bal_acc': 0.6722708064989944, 'tp': 200, 'tn': 800, 'fp': 388, 'fn': 98, 'threshold': 0.3, 'roc_auc': 0.720530246536958, 'pr_auc': 0.37413813259670287}
+TEST metrics: {'acc': 0.5750293083235639, 'prec': 0.3772290809327846, 'rec': 0.5036630036630036, 'f1': 0.4313725490196078, 'spec': 0.6086206896551725, 'bal_acc': 0.5561418466590881, 'tp': 275, 'tn': 706, 'fp': 454, 'fn': 271, 'threshold': 0.3, 'roc_auc': 0.6009631173424277, 'pr_auc': 0.4059374673245506}
+
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\baseline_tabular_run1\baseline_metrics.json

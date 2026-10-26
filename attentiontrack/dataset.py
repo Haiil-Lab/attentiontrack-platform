@@ -6,9 +6,15 @@ from typing import Callable, Dict, List, Optional, Tuple
 import numpy as np
 import torch
 from torch.utils.data import Dataset
+from attentiontrack.group_splits import read_fold_manifest
 
 
 def load_npz_paths(features_dir: str | Path, split: str) -> List[Path]:
+    manifest = Path(features_dir) / "group_manifest.csv"
+    if manifest.is_file():
+        if split not in {"train", "val", "test"}:
+            raise ValueError(f"Unknown split: {split}")
+        return read_fold_manifest(manifest)[split]
     p = Path(features_dir) / split
     if not p.exists():
         raise FileNotFoundError(f"Split folder not found: {p}")

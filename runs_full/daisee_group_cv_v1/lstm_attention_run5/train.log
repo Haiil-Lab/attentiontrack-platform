@@ -1,0 +1,21 @@
+Device: cpu
+train=5077, val=1706, test=2147
+train: total=5077, y0=3830, y1=1247, pos_ratio=0.2456, nan_files=188
+val: total=1706, y0=1160, y1=546, pos_ratio=0.3200, nan_files=38
+test: total=2147, y0=1578, y1=569, pos_ratio=0.2650, nan_files=98
+raw_pos_weight=3.071
+used_pos_weight=1.000
+Input size: 21
+Epoch 01 | loss=0.5497 | val_f1=0.4836 | val_bal_acc=0.5811 | val_spec=0.5138 | val_roc_auc=0.5933 | val_pr_auc=0.3935 | thr=0.25
+Epoch 02 | loss=0.5209 | val_f1=0.3950 | val_bal_acc=0.5640 | val_spec=0.7526 | val_roc_auc=0.5788 | val_pr_auc=0.3836 | thr=0.20
+Epoch 03 | loss=0.5072 | val_f1=0.3687 | val_bal_acc=0.5599 | val_spec=0.7957 | val_roc_auc=0.5528 | val_pr_auc=0.3720 | thr=0.25
+Epoch 04 | loss=0.4913 | val_f1=0.4181 | val_bal_acc=0.5465 | val_spec=0.6095 | val_roc_auc=0.5599 | val_pr_auc=0.3621 | thr=0.20
+Epoch 05 | loss=0.4786 | val_f1=0.2850 | val_bal_acc=0.5474 | val_spec=0.8897 | val_roc_auc=0.5274 | val_pr_auc=0.3528 | thr=0.40
+Epoch 06 | loss=0.4693 | val_f1=0.4166 | val_bal_acc=0.5432 | val_spec=0.5991 | val_roc_auc=0.5691 | val_pr_auc=0.3731 | thr=0.20
+Epoch 07 | loss=0.4630 | val_f1=0.3859 | val_bal_acc=0.5463 | val_spec=0.7026 | val_roc_auc=0.5773 | val_pr_auc=0.3796 | thr=0.20
+Epoch 08 | loss=0.4566 | val_f1=0.2980 | val_bal_acc=0.5421 | val_spec=0.8552 | val_roc_auc=0.5535 | val_pr_auc=0.3668 | thr=0.40
+Early stopping.
+BEST threshold from val: 0.250
+FINAL VAL metrics: {'acc': 0.5568581477139508, 'prec': 0.38562091503267976, 'rec': 0.6483516483516484, 'f1': 0.4836065573770491, 'spec': 0.5137931034482759, 'bal_acc': 0.5810723758999621, 'tp': 354, 'tn': 596, 'fp': 564, 'fn': 192, 'threshold': 0.25, 'roc_auc': 0.5933347543261336, 'pr_auc': 0.39348153554983173}
+TEST metrics: {'acc': 0.5002328830926874, 'prec': 0.2889447236180904, 'rec': 0.6063268892794376, 'f1': 0.39137833238797504, 'spec': 0.4619771863117871, 'bal_acc': 0.5341520377956124, 'tp': 345, 'tn': 729, 'fp': 849, 'fn': 224, 'threshold': 0.25, 'roc_auc': 0.5428352500662671, 'pr_auc': 0.2978475935841226}
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\lstm_attention_run5\best.pt, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\lstm_attention_run5\norm.json, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\lstm_attention_run5\metrics.json

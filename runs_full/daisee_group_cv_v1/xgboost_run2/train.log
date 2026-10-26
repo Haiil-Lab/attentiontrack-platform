@@ -1,0 +1,8 @@
+Tabular feature dim: 84
+train: total=5795, y0=4142, y1=1653, pos_ratio=0.2852
+val: total=1649, y0=1238, y1=411, pos_ratio=0.2492
+test: total=1486, y0=1188, y1=298, pos_ratio=0.2005
+BEST threshold from val: 0.350
+VAL metrics: {'acc': 0.5172832019405701, 'prec': 0.2849162011173184, 'rec': 0.6204379562043796, 'f1': 0.39050535987748847, 'spec': 0.48303715670436187, 'bal_acc': 0.5517375564543707, 'tp': 255, 'tn': 598, 'fp': 640, 'fn': 156, 'threshold': 0.35, 'roc_auc': 0.5694993101659139, 'pr_auc': 0.32512138777981964}
+TEST metrics: {'acc': 0.5901749663526245, 'prec': 0.2956636005256242, 'rec': 0.7550335570469798, 'f1': 0.4249291784702549, 'spec': 0.5488215488215489, 'bal_acc': 0.6519275529342643, 'tp': 225, 'tn': 652, 'fp': 536, 'fn': 73, 'threshold': 0.35, 'roc_auc': 0.6850637244932547, 'pr_auc': 0.33008421773610996}
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\xgboost_run2\xgboost_model.pkl and C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\xgboost_run2\metrics.json

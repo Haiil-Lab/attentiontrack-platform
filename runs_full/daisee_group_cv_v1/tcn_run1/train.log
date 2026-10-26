@@ -1,0 +1,18 @@
+Device: cpu
+train=5738, val=1486, test=1706
+raw_pos_weight=2.780
+used_pos_weight=1.000
+Input size: 21
+Epoch 01 | loss=0.5844 | val_f1=0.3778 | val_bal_acc=0.5968 | val_spec=0.4520 | val_roc_auc=0.6231 | val_pr_auc=0.2946 | thr=0.25
+Epoch 02 | loss=0.5561 | val_f1=0.3656 | val_bal_acc=0.5882 | val_spec=0.5623 | val_roc_auc=0.6120 | val_pr_auc=0.2772 | thr=0.20
+Epoch 03 | loss=0.5385 | val_f1=0.3651 | val_bal_acc=0.5796 | val_spec=0.4141 | val_roc_auc=0.6024 | val_pr_auc=0.2920 | thr=0.25
+Epoch 04 | loss=0.5299 | val_f1=0.3721 | val_bal_acc=0.5940 | val_spec=0.5438 | val_roc_auc=0.6125 | val_pr_auc=0.2892 | thr=0.25
+Epoch 05 | loss=0.5231 | val_f1=0.3642 | val_bal_acc=0.5869 | val_spec=0.5665 | val_roc_auc=0.6169 | val_pr_auc=0.3008 | thr=0.25
+Epoch 06 | loss=0.5130 | val_f1=0.3508 | val_bal_acc=0.5619 | val_spec=0.4158 | val_roc_auc=0.5836 | val_pr_auc=0.2763 | thr=0.20
+Epoch 07 | loss=0.5068 | val_f1=0.3529 | val_bal_acc=0.5730 | val_spec=0.5320 | val_roc_auc=0.5980 | val_pr_auc=0.2828 | thr=0.20
+Epoch 08 | loss=0.5048 | val_f1=0.3426 | val_bal_acc=0.5634 | val_spec=0.5463 | val_roc_auc=0.5792 | val_pr_auc=0.2682 | thr=0.30
+Early stopping.
+BEST threshold from val: 0.250
+FINAL VAL metrics: {'acc': 0.5100942126514132, 'prec': 0.25344036697247707, 'rec': 0.7416107382550335, 'f1': 0.37777777777777777, 'spec': 0.45202020202020204, 'bal_acc': 0.5968154701376178, 'tp': 221, 'tn': 537, 'fp': 651, 'fn': 77, 'threshold': 0.25, 'roc_auc': 0.6231201839423316, 'pr_auc': 0.2945675847019803}
+TEST metrics: {'acc': 0.5363423212192263, 'prec': 0.38299904489016234, 'rec': 0.7344322344322345, 'f1': 0.5034526051475204, 'spec': 0.44310344827586207, 'bal_acc': 0.5887678413540482, 'tp': 401, 'tn': 514, 'fp': 646, 'fn': 145, 'threshold': 0.25, 'roc_auc': 0.6141838764683593, 'pr_auc': 0.40109839464241354}
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\tcn_run1\best.pt, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\tcn_run1\norm.json, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\tcn_run1\metrics.json

@@ -1,0 +1,20 @@
+Device: cpu
+train=5738, val=1486, test=1706
+raw_pos_weight=2.780
+used_pos_weight=1.000
+Input size: 21
+Epoch 01 | loss=0.5815 | val_f1=0.3662 | val_bal_acc=0.5973 | val_spec=0.7214 | val_roc_auc=0.6167 | val_pr_auc=0.3008 | thr=0.25
+Epoch 02 | loss=0.5630 | val_f1=0.3421 | val_bal_acc=0.5544 | val_spec=0.4512 | val_roc_auc=0.5759 | val_pr_auc=0.2632 | thr=0.20
+Epoch 03 | loss=0.5532 | val_f1=0.3554 | val_bal_acc=0.5979 | val_spec=0.8535 | val_roc_auc=0.6334 | val_pr_auc=0.3166 | thr=0.30
+Epoch 04 | loss=0.5436 | val_f1=0.2702 | val_bal_acc=0.5522 | val_spec=0.8628 | val_roc_auc=0.5415 | val_pr_auc=0.2668 | thr=0.35
+Epoch 05 | loss=0.5358 | val_f1=0.1217 | val_bal_acc=0.5243 | val_spec=0.9781 | val_roc_auc=0.5294 | val_pr_auc=0.2396 | thr=0.55
+Epoch 06 | loss=0.5258 | val_f1=0.3348 | val_bal_acc=0.5640 | val_spec=0.6313 | val_roc_auc=0.5871 | val_pr_auc=0.2759 | thr=0.20
+Epoch 07 | loss=0.5196 | val_f1=0.3178 | val_bal_acc=0.5506 | val_spec=0.6448 | val_roc_auc=0.5935 | val_pr_auc=0.2714 | thr=0.20
+Epoch 08 | loss=0.5140 | val_f1=0.3236 | val_bal_acc=0.5445 | val_spec=0.5488 | val_roc_auc=0.5618 | val_pr_auc=0.2604 | thr=0.20
+Epoch 09 | loss=0.4978 | val_f1=0.1962 | val_bal_acc=0.5355 | val_spec=0.9335 | val_roc_auc=0.5435 | val_pr_auc=0.2505 | thr=0.30
+Epoch 10 | loss=0.4982 | val_f1=0.3059 | val_bal_acc=0.5549 | val_spec=0.7475 | val_roc_auc=0.5950 | val_pr_auc=0.2877 | thr=0.25
+Early stopping.
+BEST threshold from val: 0.300
+FINAL VAL metrics: {'acc': 0.7510094212651414, 'prec': 0.3695652173913043, 'rec': 0.3422818791946309, 'f1': 0.3554006968641115, 'spec': 0.8535353535353535, 'bal_acc': 0.5979086163649922, 'tp': 102, 'tn': 1014, 'fp': 174, 'fn': 196, 'threshold': 0.3, 'roc_auc': 0.6333553657379161, 'pr_auc': 0.3165919404935737}
+TEST metrics: {'acc': 0.6313012895662368, 'prec': 0.38243626062322944, 'rec': 0.24725274725274726, 'f1': 0.30033370411568405, 'spec': 0.8120689655172414, 'bal_acc': 0.5296608563849943, 'tp': 135, 'tn': 942, 'fp': 218, 'fn': 411, 'threshold': 0.3, 'roc_auc': 0.5932139699381078, 'pr_auc': 0.37053049675404937}
+Saved: C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\cnn_gru_run1\best.pt, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\cnn_gru_run1\norm.json, C:\Endava\EndevLocal\AttentionTrack-Platform\runs_full\daisee_group_cv_v1\cnn_gru_run1\metrics.json
